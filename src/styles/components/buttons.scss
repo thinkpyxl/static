@@ -1,0 +1,7 @@
+.button {
+  @include button__primary;
+}
+.button-secondary {
+  @include button__alternate;
+}
+

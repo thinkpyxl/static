@@ -1,0 +1,4 @@
+@mixin vertical-padding($value: 3rem) {
+  padding-top: $value;
+  padding-bottom: $value;
+}

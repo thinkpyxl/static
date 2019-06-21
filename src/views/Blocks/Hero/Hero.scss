@@ -1,0 +1,21 @@
+.Hero {
+  background: linear-gradient(#e66465, #9198e5);
+  height: 100vh;
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $brand__light;
+
+  @include for-tablet__landscape--up {
+    min-height: 60rem;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $brand__light;
+  }
+
+  &__inner {
+
+  }
+}

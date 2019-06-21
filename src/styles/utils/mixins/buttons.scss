@@ -1,0 +1,47 @@
+@mixin button__primary {
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  padding: .6em .6em .6em .9em;
+  text-decoration: none;
+  color: $brand__light;
+  background-color: transparent;
+  transition: 400ms ease all;
+  border: .1em solid $brand__light;
+  border-radius: .5em;
+
+  &:focus,
+  &:hover {
+    background-color: $brand__green;
+    color: $brand__light;
+    cursor: pointer;
+    border-color: $brand__green;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin button__alternate {
+  font-size: .89rem;
+  color: $brand__light;
+  border: 2px solid $brand__gray--dark;
+  border-radius: 20.5px;
+  padding: .4rem 1.2rem;
+  //margin: .4em 0;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  font-weight: 400;
+
+  &:focus,
+  &:hover {
+    background-color: $brand__gray--dark;
+    color: $brand__light;
+    cursor: pointer;
+
+    &:before {
+      opacity: 1;
+    }
+  }
+}
